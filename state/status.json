@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-09-26T14:57:16.100308+00:00",
+  "results": [
+    {
+      "name": "USGS NWIS (Water Services - Instantaneous Values)",
+      "checked_at": "2026-09-26T14:57:05.165996+00:00",
+      "broken_api": false,
+      "schema_change": false,
+      "stale": false,
+      "detail": "No baseline yet -- run with --update-baseline to set one."
+    },
+    {
+      "name": "GBIF (Global Biodiversity Information Facility) - Occurrence Search",
+      "checked_at": "2026-09-26T14:57:05.573061+00:00",
+      "broken_api": false,
+      "schema_change": false,
+      "stale": true,
+      "detail": "Latest record is 15d old (limit 14d). No baseline yet -- run with --update-baseline to set one."
+    },
+    {
+      "name": "EPA Water Quality Portal (WQP) - Station Search",
+      "checked_at": "2026-09-26T14:57:07.152434+00:00",
+      "broken_api": false,
+      "schema_change": false,
+      "stale": false,
+      "detail": "No baseline yet -- run with --update-baseline to set one."
+    },
+    {
+      "name": "ESA WorldCover (via Microsoft Planetary Computer STAC)",
+      "checked_at": "2026-09-26T14:57:15.122423+00:00",
+      "broken_api": false,
+      "schema_change": false,
+      "stale": true,
+      "detail": "Latest record is 1729d old (limit 730d). No baseline yet -- run with --update-baseline to set one."
+    },
+    {
+      "name": "Global Forest Watch - Data API dataset listing",
+      "checked_at": "2026-09-26T14:57:15.595538+00:00",
+      "broken_api": true,
+      "schema_change": false,
+      "stale": false,
+      "detail": "Request failed: 404 Client Error: Not Found for url: https://data-api.globalforestwatch.org/dataset"
+    }
+  ]
+}
