@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-26T15:50:33.652923+00:00",
+  "generated_at": "2026-09-26T16:02:54.172903+00:00",
   "results": [
     {
       "name": "USGS NWIS (Water Services - Instantaneous Values)",
-      "checked_at": "2026-09-26T15:50:25.141003+00:00",
+      "checked_at": "2026-09-26T16:02:43.925508+00:00",
       "broken_api": false,
       "schema_change": false,
       "stale": false,
@@ -11,15 +11,15 @@
     },
     {
       "name": "GBIF (Global Biodiversity Information Facility) - Occurrence Search",
-      "checked_at": "2026-09-26T15:50:30.079679+00:00",
-      "broken_api": true,
+      "checked_at": "2026-09-26T16:02:44.250800+00:00",
+      "broken_api": false,
       "schema_change": false,
-      "stale": false,
-      "detail": "Request failed: 429 Client Error: Too Many Requests for url: https://api.gbif.org/v1/occurrence/search?limit=1&offset=0"
+      "stale": true,
+      "detail": "Latest record is 15d old (limit 14d)."
     },
     {
       "name": "EPA Water Quality Portal (WQP) - Station Search",
-      "checked_at": "2026-09-26T15:50:30.557686+00:00",
+      "checked_at": "2026-09-26T16:02:45.591451+00:00",
       "broken_api": false,
       "schema_change": false,
       "stale": false,
@@ -27,7 +27,7 @@
     },
     {
       "name": "ESA WorldCover (via Microsoft Planetary Computer STAC)",
-      "checked_at": "2026-09-26T15:50:32.982695+00:00",
+      "checked_at": "2026-09-26T16:02:53.283867+00:00",
       "broken_api": false,
       "schema_change": false,
       "stale": true,
@@ -35,7 +35,7 @@
     },
     {
       "name": "Global Forest Watch - Data API dataset listing",
-      "checked_at": "2026-09-26T15:50:33.514415+00:00",
+      "checked_at": "2026-09-26T16:02:53.715388+00:00",
       "broken_api": true,
       "schema_change": false,
       "stale": false,

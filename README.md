@@ -81,12 +81,12 @@ python monitor.py --update-baseline
 ## Current Dataset Health
 
 <!-- STATUS_TABLE_START -->
-_Last checked: 2026-09-26T15:50:33.652923+00:00_
+_Last checked: 2026-09-26T16:02:54.172903+00:00_
 
 | Dataset | Status | Broken API | Schema Change | Stale | Detail |
 |---|---|---|---|---|---|
 | USGS NWIS (Water Services - Instantaneous Values) | 🟢 OK | — | — | — | — |
-| GBIF (Global Biodiversity Information Facility) - Occurrence Search | 🔴 ISSUE | ❌ | — | — | Request failed: 429 Client Error: Too Many Requests for url: https://api.gbif.org/v1/occurrence/search?limit=1&offset=0 |
+| GBIF (Global Biodiversity Information Facility) - Occurrence Search | 🔴 ISSUE | — | — | ❌ | Latest record is 15d old (limit 14d). |
 | EPA Water Quality Portal (WQP) - Station Search | 🟢 OK | — | — | — | — |
 | ESA WorldCover (via Microsoft Planetary Computer STAC) | 🔴 ISSUE | — | — | ❌ | Latest record is 1729d old (limit 730d). |
 | Global Forest Watch - Data API dataset listing | 🔴 ISSUE | ❌ | — | — | Request failed: 404 Client Error: Not Found for url: https://data-api.globalforestwatch.org/dataset |
