@@ -1,0 +1,60 @@
+# Ecological Dataset Freshness Monitor — config
+#
+# Each entry defines how to check ONE dataset's API for:
+#   - broken_api:     request fails, times out, or returns a non-2xx status
+#   - schema_change:  the set of top-level fields in the response no longer
+#                      matches the last known-good "baseline" fingerprint
+#   - stale:          the most recent record/asset is older than max_staleness_days
+#
+# `freshness_field` is a dot-path (e.g. "a.b.c") into the parsed JSON pointing
+# at a timestamp. Leave it blank ("") to skip staleness checking for datasets
+# that don't expose one directly (e.g. static raster products) — the monitor
+# will still check broken_api and schema_change for those.
+#
+# NOTE: exact field names/paths below are best-effort based on each provider's
+# public docs and may drift if a provider changes their API — that possibility
+# is exactly what this tool is meant to catch. If a check starts firing
+# "schema_change" immediately after you set this up, open state/schema_baseline.json,
+# confirm the new shape looks legitimate (not an error page), and re-run with
+# --update-baseline to accept it as the new normal.
+
+datasets:
+  - name: "USGS NWIS (Water Services - Instantaneous Values)"
+    url: "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=01646500&period=P1D&parameterCd=00060"
+    type: json
+    freshness_field: "value.timeSeries.0.values.0.value.0.dateTime"
+    max_staleness_days: 2
+    schema_check_level: "value"   # top-level keys checked at this dot-path
+
+  - name: "GBIF (Global Biodiversity Information Facility) - Occurrence Search"
+    url: "https://api.gbif.org/v1/occurrence/search?limit=1&offset=0"
+    type: json
+    freshness_field: "results.0.lastInterpreted"
+    max_staleness_days: 14
+    schema_check_level: ""
+
+  - name: "EPA Water Quality Portal (WQP) - Station Search"
+    url: "https://www.waterqualitydata.us/data/Station/search?statecode=US%3A24&mimeType=csv&providers=NWIS"
+    type: csv
+    freshness_field: ""   # WQP station search has no single freshness timestamp; checked for broken_api + schema (header) only
+    max_staleness_days: null
+    schema_check_level: "__csv_header__"
+
+  - name: "ESA WorldCover (via Microsoft Planetary Computer STAC)"
+    url: "https://planetarycomputer.microsoft.com/api/stac/v1/collections/esa-worldcover"
+    type: json
+    freshness_field: "extent.temporal.interval.0.1"
+    max_staleness_days: 730   # WorldCover is an annual/biennial product, not daily — wide window is intentional
+    schema_check_level: ""
+
+  - name: "Global Forest Watch - Data API dataset listing"
+    url: "https://data-api.globalforestwatch.org/dataset"
+    type: json
+    freshness_field: ""   # dataset listing doesn't expose one consistent timestamp; checked for broken_api + schema
+    max_staleness_days: null
+    schema_check_level: ""
+
+# Webhook to POST alerts to (Slack/Discord-compatible incoming webhook format).
+# Set via the WEBHOOK_URL environment variable / GitHub Actions secret instead
+# of hardcoding it here.
+webhook_env_var: "WEBHOOK_URL"
