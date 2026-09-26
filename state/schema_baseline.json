@@ -66,6 +66,10 @@
     "offset",
     "results"
   ],
+  "Global Forest Watch - Data API dataset listing": [
+    "data",
+    "status"
+  ],
   "USGS NWIS (Water Services - Instantaneous Values)": [
     "queryInfo",
     "timeSeries"
