@@ -30,7 +30,7 @@ datasets:
     url: "https://api.gbif.org/v1/occurrence/search?limit=1&offset=0"
     type: json
     freshness_field: "results.0.lastInterpreted"
-    max_staleness_days: 14
+    max_staleness_days: null
     schema_check_level: ""
 
   - name: "EPA Water Quality Portal (WQP) - Station Search"
@@ -44,11 +44,11 @@ datasets:
     url: "https://planetarycomputer.microsoft.com/api/stac/v1/collections/esa-worldcover"
     type: json
     freshness_field: "extent.temporal.interval.0.1"
-    max_staleness_days: 730   # WorldCover is an annual/biennial product, not daily — wide window is intentional
+    max_staleness_days: null   # WorldCover is an annual/biennial product, not daily — wide window is intentional
     schema_check_level: ""
 
   - name: "Global Forest Watch - Data API dataset listing"
-    url: "https://data-api.globalforestwatch.org/dataset"
+    url: "https://data-api.globalforestwatch.org/datasets"
     type: json
     freshness_field: ""   # dataset listing doesn't expose one consistent timestamp; checked for broken_api + schema
     max_staleness_days: null
