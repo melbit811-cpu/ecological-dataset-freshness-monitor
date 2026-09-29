@@ -54,6 +54,7 @@
     "providers",
     "stac_extensions",
     "stac_version",
+    "storage:schemes",
     "summaries",
     "title",
     "type"
