@@ -81,11 +81,11 @@ python monitor.py --update-baseline
 ## Current Dataset Health
 
 <!-- STATUS_TABLE_START -->
-_Last checked: 2026-10-02T17:33:40.450359+00:00_
+_Last checked: 2026-10-02T21:51:17.999903+00:00_
 
 | Dataset | Status | Broken API | Schema Change | Stale | Detail |
 |---|---|---|---|---|---|
-| USGS NWIS (Water Services - Instantaneous Values) | 🟢 OK | — | — | — | — |
+| USGS NWIS (Water Services - Instantaneous Values) | 🔴 ISSUE | ❌ | — | — | Request failed: 503 Server Error:  for url: https://waterservices.usgs.gov/nwis/iv/?format=json&sites=01646500&period=P1D&parameterCd=00060 |
 | GBIF (Global Biodiversity Information Facility) - Occurrence Search | 🟢 OK | — | — | — | — |
 | EPA Water Quality Portal (WQP) - Station Search | 🟢 OK | — | — | — | — |
 | ESA WorldCover (via Microsoft Planetary Computer STAC) | 🟢 OK | — | — | — | — |
