@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-09T12:37:16.206855+00:00",
+  "generated_at": "2026-10-09T22:17:58.730960+00:00",
   "results": [
     {
       "name": "USGS NWIS (Water Services - Instantaneous Values)",
-      "checked_at": "2026-10-09T12:37:12.355421+00:00",
+      "checked_at": "2026-10-09T22:17:45.658843+00:00",
       "broken_api": false,
       "schema_change": false,
       "stale": false,
@@ -11,7 +11,7 @@
     },
     {
       "name": "GBIF (Global Biodiversity Information Facility) - Occurrence Search",
-      "checked_at": "2026-10-09T12:37:12.460877+00:00",
+      "checked_at": "2026-10-09T22:17:46.028238+00:00",
       "broken_api": false,
       "schema_change": false,
       "stale": false,
@@ -19,7 +19,7 @@
     },
     {
       "name": "EPA Water Quality Portal (WQP) - Station Search",
-      "checked_at": "2026-10-09T12:37:13.870045+00:00",
+      "checked_at": "2026-10-09T22:17:47.547589+00:00",
       "broken_api": false,
       "schema_change": false,
       "stale": false,
@@ -27,7 +27,7 @@
     },
     {
       "name": "ESA WorldCover (via Microsoft Planetary Computer STAC)",
-      "checked_at": "2026-10-09T12:37:15.321229+00:00",
+      "checked_at": "2026-10-09T22:17:56.689349+00:00",
       "broken_api": false,
       "schema_change": false,
       "stale": false,
@@ -35,7 +35,7 @@
     },
     {
       "name": "Global Forest Watch - Data API dataset listing",
-      "checked_at": "2026-10-09T12:37:15.764877+00:00",
+      "checked_at": "2026-10-09T22:17:57.177509+00:00",
       "broken_api": false,
       "schema_change": false,
       "stale": false,
