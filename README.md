@@ -81,7 +81,7 @@ python monitor.py --update-baseline
 ## Current Dataset Health
 
 <!-- STATUS_TABLE_START -->
-_Last checked: 2026-10-16T10:45:32.775840+00:00_
+_Last checked: 2026-10-16T16:08:04.275530+00:00_
 
 | Dataset | Status | Broken API | Schema Change | Stale | Detail |
 |---|---|---|---|---|---|
