@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-26T12:18:25.908307+00:00",
+  "generated_at": "2026-10-26T22:19:26.368731+00:00",
   "results": [
     {
       "name": "USGS NWIS (Water Services - Instantaneous Values)",
-      "checked_at": "2026-10-26T12:18:13.931743+00:00",
+      "checked_at": "2026-10-26T22:19:18.032778+00:00",
       "broken_api": false,
       "schema_change": false,
       "stale": false,
@@ -11,7 +11,7 @@
     },
     {
       "name": "GBIF (Global Biodiversity Information Facility) - Occurrence Search",
-      "checked_at": "2026-10-26T12:18:14.238998+00:00",
+      "checked_at": "2026-10-26T22:19:18.198669+00:00",
       "broken_api": false,
       "schema_change": false,
       "stale": false,
@@ -19,7 +19,7 @@
     },
     {
       "name": "EPA Water Quality Portal (WQP) - Station Search",
-      "checked_at": "2026-10-26T12:18:15.960046+00:00",
+      "checked_at": "2026-10-26T22:19:19.720077+00:00",
       "broken_api": false,
       "schema_change": false,
       "stale": false,
@@ -27,15 +27,15 @@
     },
     {
       "name": "ESA WorldCover (via Microsoft Planetary Computer STAC)",
-      "checked_at": "2026-10-26T12:18:24.221579+00:00",
+      "checked_at": "2026-10-26T22:19:25.765753+00:00",
       "broken_api": false,
-      "schema_change": false,
+      "schema_change": true,
       "stale": false,
-      "detail": ""
+      "detail": "Schema changed. Added: ['msft:_created', 'msft:_updated']; Removed: ['stac_extensions']."
     },
     {
       "name": "Global Forest Watch - Data API dataset listing",
-      "checked_at": "2026-10-26T12:18:24.694941+00:00",
+      "checked_at": "2026-10-26T22:19:25.911940+00:00",
       "broken_api": false,
       "schema_change": false,
       "stale": false,
