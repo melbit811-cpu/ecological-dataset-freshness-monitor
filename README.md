@@ -81,13 +81,13 @@ python monitor.py --update-baseline
 ## Current Dataset Health
 
 <!-- STATUS_TABLE_START -->
-_Last checked: 2026-10-27T17:30:08.919555+00:00_
+_Last checked: 2026-10-27T21:51:11.706750+00:00_
 
 | Dataset | Status | Broken API | Schema Change | Stale | Detail |
 |---|---|---|---|---|---|
 | USGS NWIS (Water Services - Instantaneous Values) | 🟢 OK | — | — | — | — |
 | GBIF (Global Biodiversity Information Facility) - Occurrence Search | 🟢 OK | — | — | — | — |
-| EPA Water Quality Portal (WQP) - Station Search | 🟢 OK | — | — | — | — |
+| EPA Water Quality Portal (WQP) - Station Search | 🔴 ISSUE | ❌ | — | — | Request failed: HTTPSConnectionPool(host='www.waterqualitydata.us', port=443): Read timed out. (read timeout=20) |
 | ESA WorldCover (via Microsoft Planetary Computer STAC) | 🟢 OK | — | — | — | — |
 | Global Forest Watch - Data API dataset listing | 🟢 OK | — | — | — | — |
 <!-- STATUS_TABLE_END -->
