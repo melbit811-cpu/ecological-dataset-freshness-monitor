@@ -54,6 +54,7 @@
     "msft:short_description",
     "msft:storage_account",
     "providers",
+    "stac_extensions",
     "stac_version",
     "storage:schemes",
     "summaries",
