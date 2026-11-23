@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-22T23:16:08.412507+00:00",
+  "generated_at": "2026-11-23T05:53:17.619754+00:00",
   "results": [
     {
       "name": "USGS NWIS (Water Services - Instantaneous Values)",
-      "checked_at": "2026-11-22T23:15:52.847626+00:00",
+      "checked_at": "2026-11-23T05:53:04.004855+00:00",
       "broken_api": false,
       "schema_change": false,
       "stale": false,
@@ -11,7 +11,7 @@
     },
     {
       "name": "GBIF (Global Biodiversity Information Facility) - Occurrence Search",
-      "checked_at": "2026-11-22T23:16:03.019429+00:00",
+      "checked_at": "2026-11-23T05:53:08.276170+00:00",
       "broken_api": false,
       "schema_change": false,
       "stale": false,
@@ -19,15 +19,15 @@
     },
     {
       "name": "EPA Water Quality Portal (WQP) - Station Search",
-      "checked_at": "2026-11-22T23:16:04.665966+00:00",
-      "broken_api": true,
+      "checked_at": "2026-11-23T05:53:10.176798+00:00",
+      "broken_api": false,
       "schema_change": false,
       "stale": false,
-      "detail": "Request failed: HTTPSConnectionPool(host='www.waterqualitydata.us', port=443): Max retries exceeded with url: /data/Station/search?statecode=US%3A24&mimeType=csv&providers=NWIS (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.waterqualitydata.us'. (_ssl.c:1011)\")))"
+      "detail": ""
     },
     {
       "name": "ESA WorldCover (via Microsoft Planetary Computer STAC)",
-      "checked_at": "2026-11-22T23:16:07.180047+00:00",
+      "checked_at": "2026-11-23T05:53:16.374384+00:00",
       "broken_api": false,
       "schema_change": false,
       "stale": false,
@@ -35,7 +35,7 @@
     },
     {
       "name": "Global Forest Watch - Data API dataset listing",
-      "checked_at": "2026-11-22T23:16:07.591741+00:00",
+      "checked_at": "2026-11-23T05:53:16.880703+00:00",
       "broken_api": false,
       "schema_change": false,
       "stale": false,

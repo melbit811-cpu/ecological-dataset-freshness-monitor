@@ -81,13 +81,13 @@ python monitor.py --update-baseline
 ## Current Dataset Health
 
 <!-- STATUS_TABLE_START -->
-_Last checked: 2026-11-22T23:16:08.412507+00:00_
+_Last checked: 2026-11-23T05:53:17.619754+00:00_
 
 | Dataset | Status | Broken API | Schema Change | Stale | Detail |
 |---|---|---|---|---|---|
 | USGS NWIS (Water Services - Instantaneous Values) | 🟢 OK | — | — | — | — |
 | GBIF (Global Biodiversity Information Facility) - Occurrence Search | 🟢 OK | — | — | — | — |
-| EPA Water Quality Portal (WQP) - Station Search | 🔴 ISSUE | ❌ | — | — | Request failed: HTTPSConnectionPool(host='www.waterqualitydata.us', port=443): Max retries exceeded with url: /data/Station/search?statecode=US%3A24&mimeType=csv&providers=NWIS (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.waterqualitydata.us'. (_ssl.c:1011)"))) |
+| EPA Water Quality Portal (WQP) - Station Search | 🟢 OK | — | — | — | — |
 | ESA WorldCover (via Microsoft Planetary Computer STAC) | 🟢 OK | — | — | — | — |
 | Global Forest Watch - Data API dataset listing | 🟢 OK | — | — | — | — |
 <!-- STATUS_TABLE_END -->
